@@ -13,6 +13,7 @@ public class MovieRepository {
     }
 
     public Movie[] findAll() {
+
         return items;
     }
 
@@ -39,7 +40,6 @@ public class MovieRepository {
                 tmp[copyToIndex] = item;
                 copyToIndex++;
             }
-
         }
         items = tmp;
     }

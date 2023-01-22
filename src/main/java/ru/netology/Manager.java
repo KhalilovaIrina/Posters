@@ -7,19 +7,10 @@ public class Manager {
         this.repo = repo;
     }
 
-//    private int max = 10;
-//
-//    public Manager(int max) {
-//        if (max >= 1) {
-//            this.max = max;
-//        }
-//    }
-
     public void add (Movie movie) {
 
         repo.save(movie);
     }
-
 
     public Movie[] findLast(int max) {
         if (max < 1) {
