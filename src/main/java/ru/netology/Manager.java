@@ -1,6 +1,12 @@
 package ru.netology;
-public class Manager {
 
+public class Manager {
+    private Movie[] list = new Movie[0];
+
+    private int max = 10;
+
+    public Manager() {
+    }
 
     public Manager(int max) {
         if (max >= 1) {
@@ -8,16 +14,10 @@ public class Manager {
         }
     }
 
-    private int max = 10;
-
-    public Manager() {
-    }
-
     public Movie[] getList() {
         return list;
     }
 
-    private Movie[] list = new Movie[0];
 
     public void add(Movie name) {
         Movie[] tmp = new Movie[list.length + 1];
@@ -34,9 +34,9 @@ public class Manager {
 
     public Movie[] findLast() {
         int resultLength;
-        if (max > list.length ) {
+        if (max > list.length) {
             resultLength = list.length;
-        } else resultLength = max;
+        } else {resultLength = max;}
 
         Movie[] reverse = new Movie[resultLength];
 
