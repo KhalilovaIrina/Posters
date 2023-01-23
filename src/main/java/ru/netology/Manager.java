@@ -36,7 +36,9 @@ public class Manager {
         int resultLength;
         if (max > list.length) {
             resultLength = list.length;
-        } else {resultLength = max;}
+        } else {
+            resultLength = max;
+        }
 
         Movie[] reverse = new Movie[resultLength];
 
